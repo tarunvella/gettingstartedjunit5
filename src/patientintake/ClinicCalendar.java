@@ -23,8 +23,7 @@ public class ClinicCalendar {
          throw new RuntimeException("Unable to create date time from: [" +
             dateTime.toUpperCase() + "], please enter with format [M/d/yyyy h:mm a]" + t.getMessage());
       }
-      PatientAppointment appointment = new PatientAppointment(patientFirstName, patientLastName,
-         localDateTime, doc);
+      PatientAppointment appointment = new PatientAppointment(patientFirstName, patientLastName, localDateTime, doc);
       appointments.add(appointment);
    }
 
